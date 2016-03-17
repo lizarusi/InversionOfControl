@@ -14,9 +14,19 @@ var context = {
 function cloneInterface(anInterface) {
   var clone = {};
   for (var key in anInterface) {
-    clone[key] = anInterface[key];
+    clone[key] = wrappFunction(key, anInterface[key]);
   }
   return clone;
+}
+//Added wrapper for function
+function wrapFunction(fnName, fn) {
+  return function wrapper() {
+    var args = [];
+    Array.prototype.push.apply(args, arguments);
+    console.log('Call: ' + fnName);
+    console.dir(args);
+    return fn.apply(undefined, args);
+  }
 }
 // Turn hash into context
 context.global = context;
