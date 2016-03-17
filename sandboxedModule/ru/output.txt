@@ -1,3 +1,14 @@
 application 17:3:2016  15:45:9: From application global context
 application 17:3:2016  15:45:10: Hello
 application 17:3:2016  15:45:12: HelloInterval
+application 17:3:2016  15:49:17: From application global context
+application 17:3:2016  15:49:18: Hello
+application 17:3:2016  15:49:20: HelloInterval
+application 17:3:2016  15:49:23: HelloInterval
+application 17:3:2016  15:49:26: HelloInterval
+application 17:3:2016  15:49:29: HelloInterval
+application 17:3:2016  15:49:32: HelloInterval
+application 17:3:2016  15:53:34: From application global context
+application 17:3:2016  15:53:35: Hello
+application 17:3:2016  15:53:37: HelloInterval
+application 17:3:2016  15:53:40: HelloInterval

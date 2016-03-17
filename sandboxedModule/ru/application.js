@@ -3,6 +3,7 @@
 // кусочком фреймворка. Читайте README.md в нем задания.
 
 // Вывод из глобального контекста модуля
+var util = require('util')
 console.log('From application global context');
 setTimeout(function() {
   console.log("Hello");

@@ -31,7 +31,16 @@ var context = {
                  if (err) throw err;
              });
          }
-     }
+     },
+     require: function(file){
+       var res = require(file);
+       var date = new Date();
+       var time = date.getDate() + ':' + (date.getMonth()+1) + ':' + date.getFullYear() + '  ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+       fs.appendFile("require_log.txt", time + ' ' + file, function(err, info){
+           if (err) throw err;
+       });
+       return res;
+   }
 
  };
 var fileName;
