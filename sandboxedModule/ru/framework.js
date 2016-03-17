@@ -5,7 +5,8 @@
 
 // Фреймворк может явно зависеть от библиотек через dependency lookup
 var fs = require('fs'),
-    vm = require('vm')
+    vm = require('vm'),
+    path  = require('path')
 var util = require('util')
 // Создаем контекст-песочницу, которая станет глобальным контекстом приложения
 var context = {
@@ -13,7 +14,24 @@ var context = {
    console: console,
    util: util,
    setInterval: setInterval,
-   setTimeout: setTimeout
+   setTimeout: setTimeout,
+   console: {
+         log: function(message){
+             var date = new Date();
+             if(process.argv.length == 3){
+                 applicationName = path.basename(process.argv[2]);
+             }
+             else{
+                 applicationName = "application";
+             }
+             var time = date.getDate() + ':' + (date.getMonth()+1) + ':' + date.getFullYear() + '  ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+             console.log(applicationName + ' ' + time + ': ' + message);
+
+             var consoleOutput = fs.appendFile("output.txt", applicationName + ' ' + time + ': ' + message + '\n', function(err, info){
+                 if (err) throw err;
+             });
+         }
+     }
 
  };
 var fileName;
