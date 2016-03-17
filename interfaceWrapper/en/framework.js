@@ -8,9 +8,16 @@ var context = {
   module: {},
   console: console,
   // Forward link to fs API into sandbox
-  fs: fs
+  fs: cloneInterface(fs);
 };
-
+//Added clone interface function
+function cloneInterface(anInterface) {
+  var clone = {};
+  for (var key in anInterface) {
+    clone[key] = anInterface[key];
+  }
+  return clone;
+}
 // Turn hash into context
 context.global = context;
 var sandbox = vm.createContext(context);
