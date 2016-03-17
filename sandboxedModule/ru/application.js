@@ -17,3 +17,9 @@ module.exports = function() {
   // Вывод из контекста экспортируемой функции
   console.log('From application exported function');
 };
+module.exports.f = function(){
+   console.log("From wrapped console.log()");
+}
+module.exports.m = function(){
+   console.log("From wrapped console.log()");
+}

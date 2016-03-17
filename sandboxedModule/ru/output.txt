@@ -12,3 +12,45 @@ application 17:3:2016  15:53:34: From application global context
 application 17:3:2016  15:53:35: Hello
 application 17:3:2016  15:53:37: HelloInterval
 application 17:3:2016  15:53:40: HelloInterval
+application 17:3:2016  16:7:32: From application global context
+application 17:3:2016  16:7:33: Hello
+application 17:3:2016  16:7:35: HelloInterval
+application 17:3:2016  16:7:38: HelloInterval
+application 17:3:2016  16:7:41: HelloInterval
+application 17:3:2016  16:7:44: HelloInterval
+application 17:3:2016  16:11:7: From application global context
+application 17:3:2016  16:11:8: Hello
+application 17:3:2016  16:11:10: HelloInterval
+application 17:3:2016  16:11:13: HelloInterval
+application 17:3:2016  16:11:16: HelloInterval
+application 17:3:2016  16:11:19: HelloInterval
+application 17:3:2016  16:11:22: HelloInterval
+application 17:3:2016  16:11:25: HelloInterval
+application 17:3:2016  16:11:28: HelloInterval
+application 17:3:2016  16:11:31: HelloInterval
+application 17:3:2016  16:11:34: HelloInterval
+application 17:3:2016  16:11:37: HelloInterval
+application 17:3:2016  16:11:40: HelloInterval
+application 17:3:2016  16:11:43: HelloInterval
+application 17:3:2016  16:11:46: HelloInterval
+application 17:3:2016  16:11:49: HelloInterval
+application 17:3:2016  16:11:52: HelloInterval
+application 17:3:2016  16:11:55: HelloInterval
+application 17:3:2016  16:11:58: HelloInterval
+application 17:3:2016  16:12:1: HelloInterval
+application 17:3:2016  16:12:4: HelloInterval
+application 17:3:2016  16:12:7: From application global context
+application 17:3:2016  16:12:8: Hello
+application 17:3:2016  16:12:10: HelloInterval
+application 17:3:2016  16:12:13: HelloInterval
+application 17:3:2016  16:12:16: HelloInterval
+application 17:3:2016  16:12:19: HelloInterval
+application 17:3:2016  16:12:22: HelloInterval
+application 17:3:2016  16:12:25: HelloInterval
+application 17:3:2016  16:12:28: HelloInterval
+application 17:3:2016  16:12:31: HelloInterval
+application 17:3:2016  16:12:34: HelloInterval
+application 17:3:2016  16:12:37: HelloInterval
+application 17:3:2016  16:12:40: HelloInterval
+application 17:3:2016  16:12:43: HelloInterval
+application 17:3:2016  16:12:46: HelloInterval

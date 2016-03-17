@@ -7,6 +7,7 @@
 var fs = require('fs'),
     vm = require('vm'),
     path  = require('path')
+    application = require('./application.js')
 var util = require('util')
 // Создаем контекст-песочницу, которая станет глобальным контекстом приложения
 var context = {
@@ -61,7 +62,9 @@ fs.readFile(fileName, function(err, src) {
   // Запускаем код приложения в песочнице
   var script = vm.createScript(src, fileName);
   script.runInNewContext(sandbox);
-
+  for(var f in sandbox.module.exports){
+       console.log(f, typeof sandbox.module.exports[f]);
+    }
   // Забираем ссылку из sandbox.module.exports, можем ее исполнить,
   // сохранить в кеш, вывести на экран исходный код приложения и т.д.
 });
