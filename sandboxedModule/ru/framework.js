@@ -8,7 +8,12 @@ var fs = require('fs'),
     vm = require('vm');
 
 // Создаем контекст-песочницу, которая станет глобальным контекстом приложения
-var context = { module: {}, console: console };
+var context = {
+   module: {},
+   console: console,
+   setInterval: setInterval,
+   setTimeout: setTimeout
+ };
 context.global = context;
 var sandbox = vm.createContext(context);
 
@@ -16,11 +21,11 @@ var sandbox = vm.createContext(context);
 var fileName = './application.js';
 fs.readFile(fileName, function(err, src) {
   // Тут нужно обработать ошибки
-  
+
   // Запускаем код приложения в песочнице
   var script = vm.createScript(src, fileName);
   script.runInNewContext(sandbox);
-  
+
   // Забираем ссылку из sandbox.module.exports, можем ее исполнить,
   // сохранить в кеш, вывести на экран исходный код приложения и т.д.
 });
